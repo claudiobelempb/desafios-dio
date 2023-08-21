@@ -1,0 +1,8 @@
+package controleflux;
+
+public class ParametrosInvalidosException extends Exception {
+	
+
+	return"O segundo parâmetro deve ser maior que o primeiro";
+};
+

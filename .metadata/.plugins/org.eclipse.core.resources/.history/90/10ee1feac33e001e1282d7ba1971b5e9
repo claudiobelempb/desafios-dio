@@ -1,0 +1,22 @@
+package ContaBanco;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ContaTerminal {
+	
+	
+	public static void main(String[] args) {
+		Integer numero = 1021;
+		String agencia;
+		String nameCliente = "MARIO ANDRADE";
+		Double saldo = 237.48;
+		//criando o objeto scanner
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        
+        System.out.println("Por favor, digite o número da Agência !");
+        String agencia = scanner.next();
+	}
+	
+	
+}

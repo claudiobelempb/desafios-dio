@@ -1,0 +1,10 @@
+package sintaxe;
+
+public class conhecimento {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
