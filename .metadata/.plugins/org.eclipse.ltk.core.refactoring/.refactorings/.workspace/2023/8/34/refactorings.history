@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;constroleCandidatos&apos; to &apos;constrole-candidatos&apos;" description="Rename resource &apos;constroleCandidatos&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/constroleCandidatos" name="constrole-candidatos" stamp="1692625093570" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;DesafioControleFluxo&apos; to &apos;desafio-controle-fluxo&apos;" description="Rename resource &apos;DesafioControleFluxo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/DesafioControleFluxo" name="desafio-controle-fluxo" stamp="1692646825924" updateReferences="true"/>
-</session>

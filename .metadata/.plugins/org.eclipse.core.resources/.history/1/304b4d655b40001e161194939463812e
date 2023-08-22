@@ -1,5 +1,0 @@
-package controleflux;
-
-public class ParametrosInvalidosException extends Exception{
-
-}
