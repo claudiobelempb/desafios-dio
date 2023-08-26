@@ -31,9 +31,9 @@ public class CatalogoLivros {
 
 	public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
 		List<Livro> intervaloAnos = new ArrayList<Livro>();
-		if(!livros.isEmpty()) {
-			for(Livro livro : livros) {
-				if(livro.getAnoPublicacao() >= anoInicial && livro.getAnoPublicacao() <= anoFinal) {
+		if (!livros.isEmpty()) {
+			for (Livro livro : livros) {
+				if (livro.getAnoPublicacao() >= anoInicial && livro.getAnoPublicacao() <= anoFinal) {
 					intervaloAnos.add(livro);
 				}
 			}
@@ -41,16 +41,19 @@ public class CatalogoLivros {
 		return intervaloAnos;
 	}
 
-	public List<Livro> pesquisarPorTitulo(String titulo) {
-		List<Livro> titulos = new ArrayList<Livro>();
+	public Livro pesquisarPorTitulo(String titulo) {
+		Livro livroPorTitulo = null;
 		if (!livros.isEmpty()) {
 			for (Livro livro : livros) {
-				if (livro.getTitulo().contentEquals(titulo)) {
-					titulos.add(livro);
+				if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+					livroPorTitulo = livro;
+					break;
 				}
 			}
+			return livroPorTitulo;
+		} else {
+			throw new RuntimeException("A lista está vazia!");
 		}
-		return titulos;
 	}
 
 }
