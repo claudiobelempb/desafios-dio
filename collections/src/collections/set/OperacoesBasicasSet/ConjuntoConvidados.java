@@ -1,9 +1,10 @@
 package collections.set.OperacoesBasicasSet;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class ConjuntoConvidados {
-	private HashSet<Convidado> convidados;
+	private Set<Convidado> convidados;
 
 	public ConjuntoConvidados() {
 		this.convidados = new HashSet<Convidado>();
@@ -14,16 +15,17 @@ public class ConjuntoConvidados {
 		this.convidados.add(convidado);
 	}
 
-	public void removerConvidadoPorCodigoConvite(Integer codigoConvite) {
-		HashSet<Convidado> removerConvidadosProConvidado = new HashSet<Convidado>();
+	public void removerConvidadoPorCodigoConvite(int codigoConvite) {
+		Convidado removerConvidadosProConvidado = null;
 		if (!convidados.isEmpty()) {
 			for (Convidado c : convidados) {
-				if (c.getCodigoConvite().equals(codigoConvite)) {
-					removerConvidadosProConvidado.add(c);
+				if (c.getCodigoConvite() == codigoConvite) {
+					removerConvidadosProConvidado = c;
+					break;
 				}
 			}
 		}
-		convidados.removeAll(removerConvidadosProConvidado);
+		convidados.remove(removerConvidadosProConvidado);
 	}
 
 	public int contarConvidados() {
