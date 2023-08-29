@@ -24,7 +24,7 @@ public class CadastroProdutos {
 	public Set<Produto> exibirProdutosPorPreco() {
 		Set<Produto> produtosPorPreco = new TreeSet<Produto>(new ComparatorProdutosPorPreco());
 		if (!produtos.isEmpty()) {
-			produtos.addAll(produtos);
+			produtosPorPreco.addAll(produtos);
 			return produtosPorPreco;
 		} else {
 			throw new RuntimeException("A lista está vazia!");
